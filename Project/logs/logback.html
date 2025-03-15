@@ -1,0 +1,2121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Thu Nov 21 11:38:59 CET 2024</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="RelativeTime">RelativeTime</td>
+<td class="Thread">Thread</td>
+<td class="MDC">MDC</td>
+<td class="Level">Level</td>
+<td class="Logger">Logger</td>
+<td class="Message">Message</td>
+</tr>
+
+
+<tr class="info even">
+<td class="RelativeTime">487</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Initializing Areas...</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">494</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Building partitions created.</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">494</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Building spaces created.</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">496</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Building doors created.</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">496</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Doors associated to spaces.</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">496</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Spaces and partitions added to building.</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">496</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone2</td>
+<td class="Message">DirectoryAreas instance correctly instantiated.</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">497</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Initializing Users...</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">498</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">No privileges group created.</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">506</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Employee group created. 
+Accessible Spaces: ground floor, floor1, exterior, stairs
+Permitted Actions: open, close, short unlock
+Schedule: [Time: 09:00-17:00, Days: [MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY], Date range: 2024-09-01 to 2025-03-01]</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">514</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Managers group created. 
+Accessible Spaces: ground floor, floor1, exterior, stairs, parking
+Permitted Actions: open, close, lock, unlock, unlock_shortly
+Schedule: [Time: 08:00-20:00, Days: [MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY], Date range: 2024-09-01 to 2025-03-01]</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">515</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Admin group created. 
+Accessible Spaces: all areas
+Permitted Actions: open, close, lock, unlock, unlock_shortly
+Schedule: [Time: 00:00-23:59, Days: [MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY], Date range: 2024-01-01 to 2100-01-01]</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">515</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone2</td>
+<td class="Message">DirectoryUsersGroup instance correctly instantiated.</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">515</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Initializing Web Server...</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">517</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Server started.
+Listening for connections on port : 8080 ...
+</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">544975</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">List of doors: [Door{, id=&#39;D2&#39;, closed=true, state=unlocked}, Door{, id=&#39;D1&#39;, closed=true, state=unlocked}]</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">544980</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Performing action on door D2, located between locations: stairs and parking</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">544981</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Door D2 is now locked.</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">544981</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Performing action on door D1, located between locations: exterior and parking</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">544981</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Door D1 is now locked.</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">550610</td>
+<td class="Thread">Thread-2</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Performing action on door D1, located between locations: exterior and parking</td>
+</tr>
+
+<tr class="warn odd">
+<td class="RelativeTime">550610</td>
+<td class="Thread">Thread-2</td>
+<td class="MDC"></td>
+<td class="Level">WARN</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Door D1 is already locked.</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">555994</td>
+<td class="Thread">Thread-3</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Performing action on door D2, located between locations: stairs and parking</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">555994</td>
+<td class="Thread">Thread-3</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Door D2 is now unlocked.</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">559341</td>
+<td class="Thread">Thread-4</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Performing action on door D2, located between locations: stairs and parking</td>
+</tr>
+
+<tr class="warn odd">
+<td class="RelativeTime">559342</td>
+<td class="Thread">Thread-4</td>
+<td class="MDC"></td>
+<td class="Level">WARN</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Can&#39;t close door D2</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">561089</td>
+<td class="Thread">Thread-5</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Performing action on door D2, located between locations: stairs and parking</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">561089</td>
+<td class="Thread">Thread-5</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Door D2 is open.</td>
+</tr>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Thu Nov 21 11:58:14 CET 2024</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="RelativeTime">RelativeTime</td>
+<td class="Thread">Thread</td>
+<td class="MDC">MDC</td>
+<td class="Level">Level</td>
+<td class="Logger">Logger</td>
+<td class="Message">Message</td>
+</tr>
+
+
+<tr class="info even">
+<td class="RelativeTime">626</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Initializing Areas...</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">632</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Building partitions created.</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">632</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Building spaces created.</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">634</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Building doors created.</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">635</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Doors associated to spaces.</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">635</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Spaces and partitions added to building.</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">635</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone2</td>
+<td class="Message">DirectoryAreas instance correctly instantiated.</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">635</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Initializing Users...</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">637</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">No privileges group created.</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">652</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Employee group created. 
+Accessible Spaces: ground floor, floor1, exterior, stairs
+Permitted Actions: open, close, short unlock
+Schedule: [Time: 09:00-17:00, Days: [MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY], Date range: 2024-09-01 to 2025-03-01]</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">655</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Managers group created. 
+Accessible Spaces: ground floor, floor1, exterior, stairs, parking
+Permitted Actions: open, close, lock, unlock, unlock_shortly
+Schedule: [Time: 08:00-20:00, Days: [MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY], Date range: 2024-09-01 to 2025-03-01]</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">655</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Admin group created. 
+Accessible Spaces: all areas
+Permitted Actions: open, close, lock, unlock, unlock_shortly
+Schedule: [Time: 00:00-23:59, Days: [MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY], Date range: 2024-01-01 to 2100-01-01]</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">656</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone2</td>
+<td class="Message">DirectoryUsersGroup instance correctly instantiated.</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">656</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Initializing Web Server...</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">658</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Server started.
+Listening for connections on port : 8080 ...
+</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">47661</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">List of doors: [Door{, id=&#39;D5&#39;, closed=true, state=unlocked}, Door{, id=&#39;D3&#39;, closed=true, state=unlocked}, Door{, id=&#39;D9&#39;, closed=true, state=unlocked}, Door{, id=&#39;D8&#39;, closed=true, state=unlocked}, Door{, id=&#39;D4&#39;, closed=true, state=unlocked}, Door{, id=&#39;D6&#39;, closed=true, state=unlocked}, Door{, id=&#39;D7&#39;, closed=true, state=unlocked}, Door{, id=&#39;D2&#39;, closed=true, state=unlocked}, Door{, id=&#39;D1&#39;, closed=true, state=unlocked}]</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">47666</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Performing action &#39;lock&#39; on door D5, located between locations: hall and room1</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">47668</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Door D5 is now locked.</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">47668</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Performing action &#39;lock&#39; on door D3, located between locations: exterior and hall</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">47669</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Door D3 is now locked.</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">47669</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Performing action &#39;lock&#39; on door D9, located between locations: corridor and IT</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">47669</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Door D9 is now locked.</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">47669</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Performing action &#39;lock&#39; on door D8, located between locations: corridor and room3</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">47669</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Door D8 is now locked.</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">47669</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Performing action &#39;lock&#39; on door D4, located between locations: stairs and hall</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">47670</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Door D4 is now locked.</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">47670</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Performing action &#39;lock&#39; on door D6, located between locations: hall and room2</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">47670</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Door D6 is now locked.</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">47670</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Performing action &#39;lock&#39; on door D7, located between locations: stairs and corridor</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">47670</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Door D7 is now locked.</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">47670</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Performing action &#39;lock&#39; on door D2, located between locations: stairs and parking</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">47670</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Door D2 is now locked.</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">47670</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Performing action &#39;lock&#39; on door D1, located between locations: exterior and parking</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">47671</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Door D1 is now locked.</td>
+</tr>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Thu Nov 21 11:59:33 CET 2024</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="RelativeTime">RelativeTime</td>
+<td class="Thread">Thread</td>
+<td class="MDC">MDC</td>
+<td class="Level">Level</td>
+<td class="Logger">Logger</td>
+<td class="Message">Message</td>
+</tr>
+
+
+<tr class="info even">
+<td class="RelativeTime">547</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Initializing Areas...</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">556</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Building partitions created.</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">556</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Building spaces created.</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">558</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Building doors created.</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">558</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Doors associated to spaces.</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">559</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Spaces and partitions added to building.</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">559</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone2</td>
+<td class="Message">DirectoryAreas instance correctly instantiated.</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">559</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Initializing Users...</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">560</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">No privileges group created.</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">574</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Employee group created. 
+Accessible Spaces: ground floor, floor1, exterior, stairs
+Permitted Actions: open, close, short unlock
+Schedule: [Time: 09:00-17:00, Days: [MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY], Date range: 2024-09-01 to 2025-03-01]</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">580</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Managers group created. 
+Accessible Spaces: ground floor, floor1, exterior, stairs, parking
+Permitted Actions: open, close, lock, unlock, unlock_shortly
+Schedule: [Time: 08:00-20:00, Days: [MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY], Date range: 2024-09-01 to 2025-03-01]</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">580</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Admin group created. 
+Accessible Spaces: all areas
+Permitted Actions: open, close, lock, unlock, unlock_shortly
+Schedule: [Time: 00:00-23:59, Days: [MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY], Date range: 2024-01-01 to 2100-01-01]</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">580</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone2</td>
+<td class="Message">DirectoryUsersGroup instance correctly instantiated.</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">581</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Initializing Web Server...</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">582</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Server started.
+Listening for connections on port : 8080 ...
+</td>
+</tr>
+
+<tr class="debug odd">
+<td class="RelativeTime">9029</td>
+<td class="Thread">Thread-0</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">sockedthread : GET /refresh HTTP/1.1</td>
+</tr>
+
+<tr class="debug even">
+<td class="RelativeTime">9029</td>
+<td class="Thread">Thread-0</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">input GET /refresh HTTP/1.1</td>
+</tr>
+
+<tr class="debug odd">
+<td class="RelativeTime">9029</td>
+<td class="Thread">Thread-0</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">method GET</td>
+</tr>
+
+<tr class="debug even">
+<td class="RelativeTime">9030</td>
+<td class="Thread">Thread-0</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">resource /refresh</td>
+</tr>
+
+<tr class="debug odd">
+<td class="RelativeTime">9030</td>
+<td class="Thread">Thread-0</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">0 refresh</td>
+</tr>
+
+<tr class="debug even">
+<td class="RelativeTime">9030</td>
+<td class="Thread">Thread-0</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">tokens : </td>
+</tr>
+
+<tr class="debug odd">
+<td class="RelativeTime">9030</td>
+<td class="Thread">Thread-0</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">refresh, </td>
+</tr>
+
+<tr class="debug even">
+<td class="RelativeTime">9030</td>
+<td class="Thread">Thread-0</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">null, </td>
+</tr>
+
+<tr class="debug odd">
+<td class="RelativeTime">9030</td>
+<td class="Thread">Thread-0</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">null, </td>
+</tr>
+
+<tr class="debug even">
+<td class="RelativeTime">9030</td>
+<td class="Thread">Thread-0</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">null, </td>
+</tr>
+
+<tr class="debug odd">
+<td class="RelativeTime">9030</td>
+<td class="Thread">Thread-0</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">null, </td>
+</tr>
+
+<tr class="debug even">
+<td class="RelativeTime">9030</td>
+<td class="Thread">Thread-0</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">null, </td>
+</tr>
+
+<tr class="debug odd">
+<td class="RelativeTime">9030</td>
+<td class="Thread">Thread-0</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">null, </td>
+</tr>
+
+<tr class="debug even">
+<td class="RelativeTime">9030</td>
+<td class="Thread">Thread-0</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">null, </td>
+</tr>
+
+<tr class="debug odd">
+<td class="RelativeTime">9031</td>
+<td class="Thread">Thread-0</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">null, </td>
+</tr>
+
+<tr class="debug even">
+<td class="RelativeTime">9031</td>
+<td class="Thread">Thread-0</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">null, </td>
+</tr>
+
+<tr class="debug odd">
+<td class="RelativeTime">9031</td>
+<td class="Thread">Thread-0</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">null, </td>
+</tr>
+
+<tr class="debug even">
+<td class="RelativeTime">9031</td>
+<td class="Thread">Thread-0</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">null, </td>
+</tr>
+
+<tr class="debug odd">
+<td class="RelativeTime">9031</td>
+<td class="Thread">Thread-0</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">null, </td>
+</tr>
+
+<tr class="debug even">
+<td class="RelativeTime">9031</td>
+<td class="Thread">Thread-0</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">null, </td>
+</tr>
+
+<tr class="debug odd">
+<td class="RelativeTime">9031</td>
+<td class="Thread">Thread-0</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">null, </td>
+</tr>
+
+<tr class="debug even">
+<td class="RelativeTime">9031</td>
+<td class="Thread">Thread-0</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">null, </td>
+</tr>
+
+<tr class="debug odd">
+<td class="RelativeTime">9031</td>
+<td class="Thread">Thread-0</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">null, </td>
+</tr>
+
+<tr class="debug even">
+<td class="RelativeTime">9031</td>
+<td class="Thread">Thread-0</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">null, </td>
+</tr>
+
+<tr class="debug odd">
+<td class="RelativeTime">9031</td>
+<td class="Thread">Thread-0</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">null, </td>
+</tr>
+
+<tr class="debug even">
+<td class="RelativeTime">9032</td>
+<td class="Thread">Thread-0</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">null, </td>
+</tr>
+
+<tr class="debug odd">
+<td class="RelativeTime">9032</td>
+<td class="Thread">Thread-0</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">
+</td>
+</tr>
+
+<tr class="debug even">
+<td class="RelativeTime">9033</td>
+<td class="Thread">Thread-0</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">created request refresh RequestRefresh{[]}</td>
+</tr>
+
+<tr class="debug odd">
+<td class="RelativeTime">9042</td>
+<td class="Thread">Thread-0</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">processed request refresh RequestRefresh{[{&quot;closed&quot;:true,&quot;id&quot;:&quot;D1&quot;,&quot;state&quot;:&quot;unlocked&quot;}, {&quot;closed&quot;:true,&quot;id&quot;:&quot;D2&quot;,&quot;state&quot;:&quot;unlocked&quot;}, {&quot;closed&quot;:true,&quot;id&quot;:&quot;D3&quot;,&quot;state&quot;:&quot;unlocked&quot;}, {&quot;closed&quot;:true,&quot;id&quot;:&quot;D4&quot;,&quot;state&quot;:&quot;unlocked&quot;}, {&quot;closed&quot;:true,&quot;id&quot;:&quot;D5&quot;,&quot;state&quot;:&quot;unlocked&quot;}, {&quot;closed&quot;:true,&quot;id&quot;:&quot;D6&quot;,&quot;state&quot;:&quot;unlocked&quot;}, {&quot;closed&quot;:true,&quot;id&quot;:&quot;D7&quot;,&quot;state&quot;:&quot;unlocked&quot;}, {&quot;closed&quot;:true,&quot;id&quot;:&quot;D8&quot;,&quot;state&quot;:&quot;unlocked&quot;}, {&quot;closed&quot;:true,&quot;id&quot;:&quot;D9&quot;,&quot;state&quot;:&quot;unlocked&quot;}]}</td>
+</tr>
+
+<tr class="debug even">
+<td class="RelativeTime">9048</td>
+<td class="Thread">Thread-0</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">answer
+HTTP/1.0 200 OK
+Content-type: application/json
+Access-Control-Allow-Origin: *
+
+{&quot;doors&quot;:[{&quot;closed&quot;:true,&quot;id&quot;:&quot;D1&quot;,&quot;state&quot;:&quot;unlocked&quot;},{&quot;closed&quot;:true,&quot;id&quot;:&quot;D2&quot;,&quot;state&quot;:&quot;unlocked&quot;},{&quot;closed&quot;:true,&quot;id&quot;:&quot;D3&quot;,&quot;state&quot;:&quot;unlocked&quot;},{&quot;closed&quot;:true,&quot;id&quot;:&quot;D4&quot;,&quot;state&quot;:&quot;unlocked&quot;},{&quot;closed&quot;:true,&quot;id&quot;:&quot;D5&quot;,&quot;state&quot;:&quot;unlocked&quot;},{&quot;closed&quot;:true,&quot;id&quot;:&quot;D6&quot;,&quot;state&quot;:&quot;unlocked&quot;},{&quot;closed&quot;:true,&quot;id&quot;:&quot;D7&quot;,&quot;state&quot;:&quot;unlocked&quot;},{&quot;closed&quot;:true,&quot;id&quot;:&quot;D8&quot;,&quot;state&quot;:&quot;unlocked&quot;},{&quot;closed&quot;:true,&quot;id&quot;:&quot;D9&quot;,&quot;state&quot;:&quot;unlocked&quot;}]}</td>
+</tr>
+
+<tr class="debug odd">
+<td class="RelativeTime">12716</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">sockedthread : GET /area?credential=11343&amp;action=lock&amp;datetime=2024-11-21T09:30&amp;areaId=basement HTTP/1.1</td>
+</tr>
+
+<tr class="debug even">
+<td class="RelativeTime">12716</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">input GET /area?credential=11343&amp;action=lock&amp;datetime=2024-11-21T09:30&amp;areaId=basement HTTP/1.1</td>
+</tr>
+
+<tr class="debug odd">
+<td class="RelativeTime">12717</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">method GET</td>
+</tr>
+
+<tr class="debug even">
+<td class="RelativeTime">12717</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">resource /area?credential=11343&amp;action=lock&amp;datetime=2024-11-21T09:30&amp;areaId=basement</td>
+</tr>
+
+<tr class="debug odd">
+<td class="RelativeTime">12717</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">0 area</td>
+</tr>
+
+<tr class="debug even">
+<td class="RelativeTime">12717</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">1 credential</td>
+</tr>
+
+<tr class="debug odd">
+<td class="RelativeTime">12717</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">2 11343</td>
+</tr>
+
+<tr class="debug even">
+<td class="RelativeTime">12717</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">3 action</td>
+</tr>
+
+<tr class="debug odd">
+<td class="RelativeTime">12717</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">4 lock</td>
+</tr>
+
+<tr class="debug even">
+<td class="RelativeTime">12717</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">5 datetime</td>
+</tr>
+
+<tr class="debug odd">
+<td class="RelativeTime">12717</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">6 2024-11-21T09:30</td>
+</tr>
+
+<tr class="debug even">
+<td class="RelativeTime">12718</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">7 areaId</td>
+</tr>
+
+<tr class="debug odd">
+<td class="RelativeTime">12718</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">8 basement</td>
+</tr>
+
+<tr class="debug even">
+<td class="RelativeTime">12718</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">tokens : </td>
+</tr>
+
+<tr class="debug odd">
+<td class="RelativeTime">12718</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">area, </td>
+</tr>
+
+<tr class="debug even">
+<td class="RelativeTime">12718</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">credential, </td>
+</tr>
+
+<tr class="debug odd">
+<td class="RelativeTime">12718</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">11343, </td>
+</tr>
+
+<tr class="debug even">
+<td class="RelativeTime">12718</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">action, </td>
+</tr>
+
+<tr class="debug odd">
+<td class="RelativeTime">12718</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">lock, </td>
+</tr>
+
+<tr class="debug even">
+<td class="RelativeTime">12718</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">datetime, </td>
+</tr>
+
+<tr class="debug odd">
+<td class="RelativeTime">12719</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">2024-11-21T09:30, </td>
+</tr>
+
+<tr class="debug even">
+<td class="RelativeTime">12719</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">areaId, </td>
+</tr>
+
+<tr class="debug odd">
+<td class="RelativeTime">12719</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">basement, </td>
+</tr>
+
+<tr class="debug even">
+<td class="RelativeTime">12719</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">null, </td>
+</tr>
+
+<tr class="debug odd">
+<td class="RelativeTime">12719</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">null, </td>
+</tr>
+
+<tr class="debug even">
+<td class="RelativeTime">12719</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">null, </td>
+</tr>
+
+<tr class="debug odd">
+<td class="RelativeTime">12719</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">null, </td>
+</tr>
+
+<tr class="debug even">
+<td class="RelativeTime">12719</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">null, </td>
+</tr>
+
+<tr class="debug odd">
+<td class="RelativeTime">12719</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">null, </td>
+</tr>
+
+<tr class="debug even">
+<td class="RelativeTime">12719</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">null, </td>
+</tr>
+
+<tr class="debug odd">
+<td class="RelativeTime">12719</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">null, </td>
+</tr>
+
+<tr class="debug even">
+<td class="RelativeTime">12720</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">null, </td>
+</tr>
+
+<tr class="debug odd">
+<td class="RelativeTime">12720</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">null, </td>
+</tr>
+
+<tr class="debug even">
+<td class="RelativeTime">12720</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">null, </td>
+</tr>
+
+<tr class="debug odd">
+<td class="RelativeTime">12720</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">
+</td>
+</tr>
+
+<tr class="debug even">
+<td class="RelativeTime">12722</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">created request area Request{credential=11343, action=lock, now=2024-11-21T09:30, areaId=basement, requestsDoors=}</td>
+</tr>
+
+<tr class="debug odd">
+<td class="RelativeTime">12723</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone2</td>
+<td class="Message">Area visitor created</td>
+</tr>
+
+<tr class="debug even">
+<td class="RelativeTime">12723</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone2</td>
+<td class="Message">Area visitor (finder) accepted</td>
+</tr>
+
+<tr class="debug odd">
+<td class="RelativeTime">12725</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone2</td>
+<td class="Message">DoorCollectorVisitor created</td>
+</tr>
+
+<tr class="debug even">
+<td class="RelativeTime">12727</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone2</td>
+<td class="Message">doorCollector (visitor) accepted</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">12728</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">List of doors: [Door{, id=&#39;D2&#39;, closed=true, state=unlocked}, Door{, id=&#39;D1&#39;, closed=true, state=unlocked}]</td>
+</tr>
+
+<tr class="debug even">
+<td class="RelativeTime">12733</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone2</td>
+<td class="Message">User authorization checked</td>
+</tr>
+
+<tr class="debug odd">
+<td class="RelativeTime">12733</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone2</td>
+<td class="Message">Action to perform checked</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">12733</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Performing action &#39;lock&#39; on door D2, located between locations: stairs and parking</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">12735</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Door D2 is now locked.</td>
+</tr>
+
+<tr class="debug even">
+<td class="RelativeTime">12735</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone2</td>
+<td class="Message">Process request done</td>
+</tr>
+
+<tr class="debug odd">
+<td class="RelativeTime">12736</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone2</td>
+<td class="Message">User authorization checked</td>
+</tr>
+
+<tr class="debug even">
+<td class="RelativeTime">12736</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone2</td>
+<td class="Message">Action to perform checked</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">12736</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Performing action &#39;lock&#39; on door D1, located between locations: exterior and parking</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">12736</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Door D1 is now locked.</td>
+</tr>
+
+<tr class="debug odd">
+<td class="RelativeTime">12736</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone2</td>
+<td class="Message">Process request done</td>
+</tr>
+
+<tr class="debug even">
+<td class="RelativeTime">12736</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">processed request area Request{credential=11343, action=lock, now=2024-11-21T09:30, areaId=basement, requestsDoors=[Request{credential=11343, userName=unknown, action=lock, now=2024-11-21T09:30, doorID=D2, closed=true, authorized=true, reasons=[]}, Request{credential=11343, userName=unknown, action=lock, now=2024-11-21T09:30, doorID=D1, closed=true, authorized=true, reasons=[]}]}</td>
+</tr>
+
+<tr class="debug odd">
+<td class="RelativeTime">12745</td>
+<td class="Thread">Thread-1</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">answer
+HTTP/1.0 200 OK
+Content-type: application/json
+Access-Control-Allow-Origin: *
+
+{&quot;areaId&quot;:&quot;basement&quot;,&quot;requestArea&quot;:[{&quot;reasons&quot;:[],&quot;authorized&quot;:true,&quot;action&quot;:&quot;lock&quot;,&quot;closed&quot;:true,&quot;state&quot;:&quot;locked&quot;,&quot;doorId&quot;:&quot;D2&quot;},{&quot;reasons&quot;:[],&quot;authorized&quot;:true,&quot;action&quot;:&quot;lock&quot;,&quot;closed&quot;:true,&quot;state&quot;:&quot;locked&quot;,&quot;doorId&quot;:&quot;D1&quot;}],&quot;action&quot;:&quot;lock&quot;,&quot;requestsDoors&quot;:[{&quot;reasons&quot;:[],&quot;authorized&quot;:true,&quot;action&quot;:&quot;lock&quot;,&quot;closed&quot;:true,&quot;state&quot;:&quot;locked&quot;,&quot;doorId&quot;:&quot;D2&quot;},{&quot;reasons&quot;:[],&quot;authorized&quot;:true,&quot;action&quot;:&quot;lock&quot;,&quot;closed&quot;:true,&quot;state&quot;:&quot;locked&quot;,&quot;doorId&quot;:&quot;D1&quot;}]}</td>
+</tr>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Thu Nov 21 13:19:52 CET 2024</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="RelativeTime">RelativeTime</td>
+<td class="Thread">Thread</td>
+<td class="MDC">MDC</td>
+<td class="Level">Level</td>
+<td class="Logger">Logger</td>
+<td class="Message">Message</td>
+</tr>
+
+
+<tr class="info even">
+<td class="RelativeTime">1291</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Initializing Areas...</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">1322</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Building partitions created.</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">1322</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Building spaces created.</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">1338</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Building doors created.</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">1338</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Doors associated to spaces.</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">1338</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Spaces and partitions added to building.</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">1338</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone2</td>
+<td class="Message">DirectoryAreas instance correctly instantiated.</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">1338</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Initializing Users...</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">1338</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">No privileges group created.</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">1369</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Employee group created. 
+Accessible Spaces: ground floor, floor1, exterior, stairs
+Permitted Actions: open, close, short unlock
+Schedule: [Time: 09:00-17:00, Days: [MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY], Date range: 2024-09-01 to 2025-03-01]</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">1384</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Managers group created. 
+Accessible Spaces: ground floor, floor1, exterior, stairs, parking
+Permitted Actions: open, close, lock, unlock, unlock_shortly
+Schedule: [Time: 08:00-20:00, Days: [MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY], Date range: 2024-09-01 to 2025-03-01]</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">1384</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Admin group created. 
+Accessible Spaces: all areas
+Permitted Actions: open, close, lock, unlock, unlock_shortly
+Schedule: [Time: 00:00-23:59, Days: [MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY], Date range: 2024-01-01 to 2100-01-01]</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">1384</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone2</td>
+<td class="Message">DirectoryUsersGroup instance correctly instantiated.</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">1384</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Initializing Web Server...</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">1384</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Server started.
+Listening for connections on port : 8080 ...
+</td>
+</tr>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Thu Jan 09 13:03:40 CET 2025</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="RelativeTime">RelativeTime</td>
+<td class="Thread">Thread</td>
+<td class="MDC">MDC</td>
+<td class="Level">Level</td>
+<td class="Logger">Logger</td>
+<td class="Message">Message</td>
+</tr>
+
+
+<tr class="info even">
+<td class="RelativeTime">593</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Initializing Areas...</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">601</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Building partitions created.</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">602</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Building spaces created.</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">682</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Building doors created.</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">682</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Doors associated to spaces.</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">682</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Spaces and partitions added to building.</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">682</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone2</td>
+<td class="Message">DirectoryAreas instance correctly instantiated.</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">683</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Initializing Users...</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">684</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">No privileges group created.</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">695</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Employee group created. 
+Accessible Spaces: ground floor, floor1, exterior, stairs
+Permitted Actions: open, close, short unlock
+Schedule: [Time: 09:00-17:00, Days: [MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY], Date range: 2024-09-01 to 2025-03-01]</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">699</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Managers group created. 
+Accessible Spaces: ground floor, floor1, exterior, stairs, parking
+Permitted Actions: open, close, lock, unlock, unlock_shortly
+Schedule: [Time: 08:00-20:00, Days: [MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY], Date range: 2024-09-01 to 2025-03-01]</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">700</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Admin group created. 
+Accessible Spaces: all areas
+Permitted Actions: open, close, lock, unlock, unlock_shortly
+Schedule: [Time: 00:00-23:59, Days: [MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY], Date range: 2024-01-01 to 2100-01-01]</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">700</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone2</td>
+<td class="Message">DirectoryUsersGroup instance correctly instantiated.</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">700</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Initializing Web Server...</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">702</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Server started.
+Listening for connections on port : 8080 ...
+</td>
+</tr>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Thu Jan 09 13:09:01 CET 2025</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="RelativeTime">RelativeTime</td>
+<td class="Thread">Thread</td>
+<td class="MDC">MDC</td>
+<td class="Level">Level</td>
+<td class="Logger">Logger</td>
+<td class="Message">Message</td>
+</tr>
+
+
+<tr class="info even">
+<td class="RelativeTime">416</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Initializing Areas...</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">425</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Building partitions created.</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">425</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Building spaces created.</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">429</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Building doors created.</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">429</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Doors associated to spaces.</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">430</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Spaces and partitions added to building.</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">430</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone2</td>
+<td class="Message">DirectoryAreas instance correctly instantiated.</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">431</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Initializing Users...</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">436</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">No privileges group created.</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">450</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Employee group created. 
+Accessible Spaces: ground floor, floor1, exterior, stairs
+Permitted Actions: open, close, short unlock
+Schedule: [Time: 09:00-17:00, Days: [MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY], Date range: 2024-09-01 to 2025-03-01]</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">453</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Managers group created. 
+Accessible Spaces: ground floor, floor1, exterior, stairs, parking
+Permitted Actions: open, close, lock, unlock, unlock_shortly
+Schedule: [Time: 08:00-20:00, Days: [MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY], Date range: 2024-09-01 to 2025-03-01]</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">454</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Admin group created. 
+Accessible Spaces: all areas
+Permitted Actions: open, close, lock, unlock, unlock_shortly
+Schedule: [Time: 00:00-23:59, Days: [MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY], Date range: 2024-01-01 to 2100-01-01]</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">454</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone2</td>
+<td class="Message">DirectoryUsersGroup instance correctly instantiated.</td>
+</tr>
+
+<tr class="info odd">
+<td class="RelativeTime">454</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Initializing Web Server...</td>
+</tr>
+
+<tr class="info even">
+<td class="RelativeTime">456</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">INFO</td>
+<td class="Logger">Milestone1</td>
+<td class="Message">Server started.
+Listening for connections on port : 8080 ...
+</td>
+</tr>
