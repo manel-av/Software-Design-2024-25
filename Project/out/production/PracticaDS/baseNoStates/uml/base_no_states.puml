@@ -1,0 +1,272 @@
+@startuml
+'https://plantuml.com/class-diagram
+skinparam classAttributeIconSize 0
+
+class Webserver {
+- {static} milestone1Logger : Logger
+- {static} PORT :int
+- {static} FORMATTER : DateTimeFormatter
+- Webserver()
+}
+
+class SocketThread {
+- insocked : Socked
+- makeRequest(tokens : String[]) : Request
+- makeRequestReader(tokens : String[]) : RequestReader
+- makeRequestArea(tokens : String[]) : RequestArea
+- makeHeaderAnswer() : String
+- makeJsonAnswer(request : Request) : String
++ run()
+}
+
+Webserver +-right- SocketThread
+
+note right of SocketThread
+inner class
+of Webserver
+end note
+
+class Actions {
++ LOCK : String
++ UNLOCK : String
++ UNLOCK_SHORTLY : String
++ OPEN : String
++ CLOSE : String
+}
+Actions -[hidden]right Main
+
+class Main {
++ {static} main(args : String)
+}
+
+note right of Main::main
+DirectoryAreas.makeAreas()
+DirectoryUsersGroup.makeUsersGroup()
+new Webserver()
+end note
+
+Main -[hidden]down- Webserver
+
+class DirectoryAreas {
+- {static} allDoors : ArrayList<Door>
+- {static} rootArea : Area
+- {static} uniqueInstance : DirectoryAreas
+- {static} milestone1Logger : Logger
+- {static} milestone2Logger : Logger
+- DirectoryAreas()
+- makeAreas() : void
++ {static} getInstance() : DirectoryAreas
++ {static} findAreaById(id : String) : Area
++ {static} findDoorById(id : String) : Door
++ {static} getAllDoors() : ArrayList<Door>
+}
+Webserver -[hidden]down- DirectoryAreas
+
+class DirectoryUsersGroup {
+- {static} usersGroups : ArrayList<UserGroup>
+- {static} uniqueInstance : DirectoryUsersGroup
+- {static} milestone1Logger : Logger
+- {static} milestone2Logger : Logger
+- DirectoryUsersGroup()
+- makeUsersGroup() : void
++ {static} getInstance() : DirectoryUsersGroup
++ {static} findUserByCredential(credential : String) : User
++ {static} findGroupForUser(user : User)
+}
+DirectoryAreas -[hidden]right- DirectoryUsersGroup
+
+abstract class Area implements Visitable {
+# id : String
+# rootArea : Area
++ Area(id : String, root : Area)
++ getId() : String
++ {abstract} accept(visitor : AreaVisitor) : void
+}
+DirectoryAreas -left-> "1" Area : "rootArea"
+
+class Door implements Visitable {
+- id : String
+- doorState : DoorStates
+- fromArea : Area
+- toArea : Area
+- {static} milestone1Logger : Logger
+- {static} milestone2Logger : Logger
+- doAction(action : String) : void
++ Door(id : String, fromArea: Area, toArea : Area)
++ getId() : String
++ getStateName() : String
++ getState() : DoorStates
++ setState(state : DoorStates) : void
++ getInitialLocation() : Area
++ getFinalLocation() : Area
++ processRequest(request : RequestReader) : void
++ isClosed() : boolean
++ toString() : String
++ toJson() : JSONObject
++ accept(visitor : AreaVisitor) : void
+}
+DirectoryAreas -down-> "*" Door : "allDoors"
+
+class Space extends Area{
+- doors : ArrayList<Door>
++ Space(id : String, root : Area)
++ accept(visitor : AreaVisitor) : void
++ addDoor(door : Door) : void
+}
+
+class Partition extends Area {
+- areas : ArrayList<Area>
++ Partition(id : String, root : Area)
++ accept(visitor : AreaVisitor) : void
++ addArea(area : Area) : void
+}
+Partition "1" *--> "*" Area : "areas"
+
+abstract class DoorStates {
+# door : Door
+# {static} milestone1Logger : Logger
++ DoorStates(door : Door)
++ {abstract} lock() : void
++ {abstract} unlock() : void
++ {abstract} open() : void
++ {abstract} close() : void
++ {abstract} unlockShortly() : void
++ {abstract} getStateName() : String
++ {abstract} isClosed() : boolean
+}
+DoorStates <-up- Door : "doorState"
+
+class Closed extends DoorStates {
++ Closed(door : Door)
++ lock() : void
++ unlock() : void
++ open() : void
++ close() : void
++ unlockShortly() : void
++ getStateName() : String
++ isClosed() : boolean
+}
+
+class Locked extends DoorStates {
++ Locked(door : Door)
++ lock() : void
++ unlock() : void
++ open() : void
++ close() : void
++ unlockShortly() : void
++ getStateName() : String
++ isClosed() : boolean
+}
+
+class Opened extends DoorStates {
++ Opened(door : Door)
++ lock() : void
++ unlock() : void
++ open() : void
++ close() : void
++ unlockShortly() : void
++ getStateName() : String
++ isClosed() : boolean
+}
+
+class Propped extends DoorStates {
++ Propped(door : Door)
++ lock() : void
++ unlock() : void
++ open() : void
++ close() : void
++ unlockShortly() : void
++ getStateName() : String
++ isClosed() : boolean
+}
+
+class UnlockedShortly extends DoorStates {
+- doorRemainsOpen : boolean
+- startUnlockShortlyTimer() : void
+- checkDoorState() : void
++ UnlockedShortly(door : Door)
++ getDoorTemporalState() : boolean
++ lock() : void
++ unlock() : void
++ open() : void
++ close() : void
++ unlockShortly() : void
++ getStateName() : String
++ isClosed() : boolean
+}
+
+class UserGroup {
+- groupName : String
+- users : ArrayList<User>
+- accessibleSpaces : ArrayList<String>
+- permittedActions : ArrayList<String>
+- schedule : Schedule
++ UserGroup(groupName : String, accessibleSpaces : ArrayList<String>, permittedActions : ArrayList<String>, schedule : Schedule)
++ addUser(user : User) : void
++ getUsers() : ArrayList<User>
++ getPermittedActions() : ArrayList<String>
++ getGroupName() : String
++ getSchedule() : Schedule
++ getPrivileges() : String
+}
+UserGroup "*" <-up- DirectoryUsersGroup : usersGroups
+
+class Schedule {
+- startTime : LocalTime
+- endTime : LocalTime
+- validDays : List<DayOfWeek>
+- startDate : LocalDate
+- endDate : LocalDate
++ Schedule(startTime : LocalTime, endTime : LocalTime, validDays : List<DayOfWeek>, startDate : LocalDate, endDate : LocalDate)
++ isWithinSchedule(currentDate : LocalDate, currentTime : LocalTime) : boolean
++ toString() : String
+}
+Schedule "1" <-up- UserGroup : "schedule"
+
+class User {
+- name : String
+- credential : String
++ User(name : String, credential : String)
++ getCredential() : String
++ toString() : String
+}
+User "*" <-left- UserGroup : "users"
+
+interface Visitable {
++ accept(visitor : AreaVisitor) : void
+}
+
+interface AreaVisitor {
++ visit(partition : Partition) : void
++ visit(space : Space) : void
++ visit(door : Door) : void
+}
+AreaVisitor -[hidden]right- Area
+AreaVisitor <-up- Visitable
+
+class AreaFinderVisitor implements AreaVisitor {
+- targetId : String
+- foundArea : Area
++ AreaFinderVisitor(targetId : String)
++ getFoundArea() : Area
++ visit(partition : Partition) : void
++ visit(space : Space) : void
++ visit(door : Door) : void
+}
+
+class SpaceCollectorVisitor implements AreaVisitor {
+- spaces : []
++ getSpaces() : []
++ visit(partition : Partition) : void
++ visit(space : Space) : void
++ visit(door : Door) : void
+}
+
+class DoorCollectorVisitor implements AreaVisitor {
++ doors : []
++ getDoors() : []
++ visit(partition : Partition) : void
++ visit(space : Space) : void
++ visit(door : Door) : void
+}
+@enduml
