@@ -2,10 +2,8 @@
 
 ## Course Description
 
-This course focuses on the principles and methodologies of software design, emphasizing object-oriented design, design patterns, and architectural styles. Students learn to describe both the logical architecture of software and its correspondence with system architecture using UML diagrams.
+This course taught us how to design software correctly, using UML diagrams and design patterns to structure our applications efficiently. The main focus was on object-oriented programming and how to create scalable and maintainable systems.
 
 ## Practical Work
 
-- **UML Modeling:** Create various UML diagrams to represent software architectures and designs.
-- **Design Patterns Implementation:** Apply common design patterns to solve recurring design problems.
-- **Team Project:** Collaborate on designing a software system, from requirements analysis to architectural design, using appropriate design methodologies.
+The practical project involved designing an Access Control System (ACS), which simulated how electronic door locks are managed in a building. We started by analyzing the system requirements and then designed UML diagrams (class diagrams, sequence diagrams, etc.) to model the system. After that, we implemented a prototype using Java and REST APIs, ensuring that users could authenticate and interact with the system correctly.
